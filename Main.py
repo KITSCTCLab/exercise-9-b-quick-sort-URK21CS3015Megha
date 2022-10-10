@@ -10,7 +10,7 @@ def partition(array, low, high):
     (array[i + 1], array[high]) = (array[high], array[i + 1])
     return i + 1
 
-def quick_sort(data, low, high) -> List[int]:
+def quick_sort(array, low, high):
     if low < high:
         pi = partition(array, low, high)
         quick_sort(array, low, pi - 1)
